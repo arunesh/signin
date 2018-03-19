@@ -1,6 +1,7 @@
 package com.inceptai.signin.signin;
 
 import android.annotation.SuppressLint;
+import android.content.pm.ActivityInfo;
 import android.os.Build;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -38,6 +39,7 @@ public class FullscreenActivity extends AppCompatActivity {
 
         mVisible = true;
         mContentView = findViewById(R.id.main_layout);
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LOCKED);
         hide();
     }
 
@@ -98,5 +100,8 @@ public class FullscreenActivity extends AppCompatActivity {
         if (actionBar != null) {
             actionBar.show();
         }
+    }
+
+    public void onCheckboxClicked(View view) {
     }
 }
