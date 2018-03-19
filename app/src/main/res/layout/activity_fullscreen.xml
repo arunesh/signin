@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#ffffff"
+    android:background="@drawable/abs_blue"
+    android:id="@+id/main_layout"
     tools:context="com.inceptai.signin.signin.FullscreenActivity">
 
     <!-- The primary full-screen view. This can be replaced with whatever view
@@ -21,8 +22,8 @@
         android:fontFamily="sans-serif-thin"
         app:layout_constraintTop_toTopOf="parent"
         android:background="#0099cc"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
+        android:paddingTop="50dp"
+        android:paddingBottom="50dp"
         android:textStyle="bold" />
 
     <!-- This FrameLayout insets its children based on system windows using
